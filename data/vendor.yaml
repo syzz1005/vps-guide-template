@@ -1,0 +1,62 @@
+# 复制本文件后按真实厂商填写。
+# 评测结论、优惠、套餐价：从官网与可信来源网络收集，填写后更新 updated_at。
+
+vendor_id: examplecloud
+display_name: ExampleCloud
+display_name_zh: 示例云（占位）
+tier: 1
+official_url: https://example.com
+pricing_url: https://example.com/pricing
+affiliate:
+  enabled: true
+  signup_url: https://example.com/affiliates
+  link: "REPLACE_WITH_YOUR_AFFILIATE_URL"
+  disclosure_required: true
+geo_focus: [global]
+cn_relevance: medium
+updated_at: "2026-09-22"
+sources:
+  - name: Official pricing
+    url: https://example.com/pricing
+    fetched: "2026-09-22"
+
+tagline_zh: "适合练手与轻量站点的示例占位厂商"
+verdict_zh: "这是模板占位结论——复制仓库后请改成你根据最新公开资料整理的真实判断。"
+
+pros:
+  - 配置字段完整，方便自动化生成页面
+  - 支持多套餐卡片与筛选
+cons:
+  - 当前为虚构示例，不可当作真实购买建议
+
+plans:
+  - id: starter
+    name: Starter
+    price: "$5/月起"
+    price_note: "示例价格，请替换"
+    cpu: "1 vCPU"
+    ram: "1 GB"
+    storage: "25 GB NVMe"
+    bandwidth: "1 TB"
+    regions: [NYC, AMS, SGP]
+    best_for: "博客 / 实验"
+  - id: pro
+    name: Pro
+    price: "$12/月起"
+    price_note: "示例价格，请替换"
+    cpu: "2 vCPU"
+    ram: "2 GB"
+    storage: "50 GB NVMe"
+    bandwidth: "2 TB"
+    regions: [NYC, AMS, SGP, TYO]
+    best_for: "小型生产"
+
+differentiation:
+  title: "差异化模块（必填）"
+  body: |
+    每家仓库写一段别人没有的内容：例如中文支付坑、闪购是否计佣、
+    API/CLI 上手、或某机房延迟自测方法。没有本段不要发布。
+
+cta:
+  primary_label: "查看当前方案（含推广链接）"
+  secondary_label: "打开官网定价（无联盟）"
