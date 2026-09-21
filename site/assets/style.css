@@ -1,0 +1,105 @@
+:root {
+  --bg: #0b1220;
+  --bg2: #121a2b;
+  --card: #162033;
+  --text: #e8eefc;
+  --muted: #9aa8c7;
+  --line: rgba(255,255,255,.08);
+  --brand: #5b8cff;
+  --brand2: #33d6a6;
+  --warn: #ffb020;
+  --danger: #ff6b7a;
+  --shadow: 0 20px 60px rgba(0,0,0,.35);
+  --radius: 18px;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Noto Sans SC", sans-serif;
+}
+[data-theme="light"] {
+  --bg: #f4f7ff;
+  --bg2: #ffffff;
+  --card: #ffffff;
+  --text: #142033;
+  --muted: #5b6b86;
+  --line: rgba(20,32,51,.1);
+  --shadow: 0 16px 40px rgba(30,60,120,.12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(91,140,255,.25), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(51,214,166,.18), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg) 75%, transparent);
+  border-bottom: 1px solid var(--line);
+}
+.topbar-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding: .85rem 0;
+}
+.brand {
+  display: flex; align-items: center; gap: .7rem; font-weight: 700;
+}
+.logo {
+  width: 34px; height: 34px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  box-shadow: var(--shadow);
+}
+.badge-row { display: flex; flex-wrap: wrap; gap: .4rem; }
+.badge {
+  font-size: .75rem; padding: .2rem .55rem; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--muted); background: var(--bg2);
+}
+.badge.accent { color: #042015; background: var(--brand2); border-color: transparent; font-weight: 700; }
+.badge.warn { color: #3b2a00; background: var(--warn); border-color: transparent; font-weight: 700; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  border: 0; border-radius: 12px; padding: .7rem 1rem; font-weight: 700;
+  cursor: pointer; text-decoration: none !important;
+}
+.btn-primary { background: linear-gradient(135deg, var(--brand), #7aa4ff); color: #06101f; }
+.btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+.hero { padding: 2.5rem 0 1rem; }
+.hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.15; margin: .6rem 0; }
+.hero p { color: var(--muted); font-size: 1.05rem; max-width: 60ch; }
+.verdict {
+  margin-top: 1.2rem; padding: 1rem 1.1rem; border-radius: var(--radius);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--brand) 18%, var(--card)), var(--card));
+  border: 1px solid var(--line); box-shadow: var(--shadow);
+}
+.grid { display: grid; gap: 1rem; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 860px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.1rem 1.15rem; box-shadow: var(--shadow);
+}
+.card h3 { margin: 0 0 .5rem; }
+.muted { color: var(--muted); }
+.price { font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.chip {
+  border: 1px solid var(--line); background: var(--bg2); color: var(--muted);
+  border-radius: 999px; padding: .35rem .8rem; cursor: pointer; font-weight: 600;
+}
+.chip.active { background: var(--brand); color: #06101f; border-color: transparent; }
+.list { margin: .4rem 0 0; padding-left: 1.1rem; color: var(--muted); }
+.footer {
+  margin: 3rem 0 2rem; padding-top: 1rem; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: .92rem;
+}
+.section { padding: 1.4rem 0; }
+.section h2 { margin: 0 0 .8rem; font-size: 1.35rem; }
+.kv { display: grid; grid-template-columns: 120px 1fr; gap: .35rem .75rem; color: var(--muted); }
+.kv b { color: var(--text); font-weight: 600; }

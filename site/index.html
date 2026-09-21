@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ExampleCloud 非官方选购指南｜VPS Guide Template</title>
+  <meta name="description" content="非官方选购与评测指南模板。含推广链接披露。数据请按官网最新信息更新。" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>ExampleCloud Guide</div>
+          <div class="badge-row" style="margin-top:.25rem">
+            <span class="badge">非官方</span>
+            <span class="badge warn">含推广链接</span>
+            <span class="badge">更新 2026-09-22</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <button class="btn btn-ghost" id="themeToggle" type="button">切换主题</button>
+        <a class="btn btn-primary" href="#cta" rel="sponsored noopener">查看方案</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge-row">
+        <span class="badge accent">模板示例</span>
+        <span class="badge">GitHub Pages 单页</span>
+      </div>
+      <h1>把复杂套餐变成<br/>30 秒能做的选择</h1>
+      <p>这是可复制的精美单页模板：结论先行、套餐可筛选、披露清晰。复制仓库后，把厂商名、套餐与联盟链接换成真实数据即可。</p>
+      <div class="verdict">
+        <strong>一句话结论（占位）：</strong>
+        <span class="muted"> ExampleCloud 适合练手与轻量站点；生产环境请先核对其实机房与最新活动价。——请替换为你从网络收集的真实结论。</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>30 秒速览</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>起步价</h3><div class="price">$5/月起</div><p class="muted">示例 · 以官网为准</p></div>
+        <div class="card"><h3>机房</h3><p><b>NYC / AMS / SGP</b></p><p class="muted">可按厂商扩充</p></div>
+        <div class="card"><h3>更适合</h3><p><b>博客 · 实验 · 轻量 API</b></p><p class="muted">不适合重型数据库（示例）</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>适合 / 不适合</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>适合</h3>
+          <ul class="list">
+            <li>想先看清配置再下单</li>
+            <li>需要多地区轻量节点</li>
+            <li>接受按月付费的 DIY 用户</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>不适合</h3>
+          <ul class="list">
+            <li>需要企业级工单与合规认证</li>
+            <li>只要「官方中文站」一站式发票（示例）</li>
+            <li>把本页示例价格当实时价</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <h2>套餐怎么选</h2>
+      <div class="chips">
+        <button class="chip active" data-filter="all" type="button">全部</button>
+        <button class="chip" data-filter="blog" type="button">博客</button>
+        <button class="chip" data-filter="prod" type="button">小型生产</button>
+      </div>
+      <div class="grid grid-2">
+        <article class="card" data-plan data-tags="blog,all">
+          <h3>Starter</h3>
+          <div class="price">$5/月起</div>
+          <div class="kv" style="margin-top:.8rem">
+            <span>CPU</span><b>1 vCPU</b>
+            <span>内存</span><b>1 GB</b>
+            <span>硬盘</span><b>25 GB NVMe</b>
+            <span>流量</span><b>1 TB</b>
+          </div>
+          <p class="muted" style="margin-top:.8rem">最佳场景：博客 / 实验</p>
+        </article>
+        <article class="card" data-plan data-tags="prod,all">
+          <h3>Pro</h3>
+          <div class="price">$12/月起</div>
+          <div class="kv" style="margin-top:.8rem">
+            <span>CPU</span><b>2 vCPU</b>
+            <span>内存</span><b>2 GB</b>
+            <span>硬盘</span><b>50 GB NVMe</b>
+            <span>流量</span><b>2 TB</b>
+          </div>
+          <p class="muted" style="margin-top:.8rem">最佳场景：小型生产</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>差异化模块（每仓必填）</h2>
+      <div class="card">
+        <p class="muted">在这里写这家独有的内容：中文支付/实名坑、闪购是否计佣、API 上手、或你自己的测速方法。没有差异化，不要发布。</p>
+        <button class="btn btn-ghost" type="button" data-copy="先看官网实时价，再决定是否走推广链接">复制提示</button>
+      </div>
+    </section>
+
+    <section class="section" id="cta">
+      <h2>下一步</h2>
+      <div class="card" style="display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;justify-content:space-between">
+        <div>
+          <strong>准备好了？</strong>
+          <p class="muted" style="margin:.3rem 0 0">主按钮走联盟链接；次按钮走官网定价，方便对照。</p>
+        </div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://example.com" rel="sponsored noopener" target="_blank">查看当前方案（含推广链接）</a>
+          <a class="btn btn-ghost" href="https://example.com/pricing" rel="noopener" target="_blank">打开官网定价</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>披露：</strong>本页含推广链接；经链接成交，作者可能获得佣金，不会增加你的费用。详见仓库内 <code>AFFILIATE_DISCLOSURE.md</code>。</p>
+      <p>数据截至 <strong>2026-09-22</strong>。价格与活动以厂商官网为准。本站非官方，与 ExampleCloud 无隶属关系。</p>
+      <p>源码：<a href="https://github.com/syzz1005/vps-guide-template">vps-guide-template</a></p>
+    </footer>
+  </main>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
